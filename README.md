@@ -1,8 +1,10 @@
-# WindowsEventloger Win10系统日志事件分析
-这是一个简单的Demo，用以打印出指定筛选条件的日志信息，有关系统日志参考：https://docs.microsoft.com/zh-cn/windows/win32/wes/windows-event-log
+# WindowsEventloger 
+
+这是一个简单的Demo，用以打印出指定筛选条件的日志信息，本工程已经在win10 64位、VS2019 测试通过，有关系统日志参考：https://docs.microsoft.com/zh-cn/windows/win32/wes/windows-event-log
 
 本例以安全登录审计相关事件为例，简单实现，过滤条件如下：
 //登录日志审计参考：https://www.secpulse.com/archives/106858.html
+```
 // Event Log 条件筛选器，这里筛选条件为：安全通道：（Security）,登录类型及说明如下
 // 事件ID: 说明
 // 4720	创建用户
@@ -26,6 +28,7 @@
     L"    </Select>" \
     L"  </Query>" \
     L"</QueryList>"
+```
 	
 
 
